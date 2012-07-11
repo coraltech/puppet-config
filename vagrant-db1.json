@@ -1,11 +1,5 @@
 {
   "server_ip" : "172.10.20.1",
   "profiles" : [ "panopoly_db" ],
-  "db_port" : "6612",
-  "db_status_port" : "9200",
-  "db_server_id" : "1",
-  "db_origin_ip" : "",
-  "panopoly_db" : "panopoly",
-  "panopoly_db_user" : "panopoly",
-  "panopoly_db_pw" : "panopoly"
+  "db_server_id" : "1"
 }

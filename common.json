@@ -38,9 +38,15 @@
   "haproxy_default_mode" : "http",
   "haproxy_default_retries" : "3",
   "haproxy_default_max_connections" : "1000",
-  "haproxy_default_options" : {},
+  "haproxy_default_options" : {
+    "tcplog"      : [ ],
+    "dontlognull" : [ ],
+    "redispatch"  : [ ]
+  },
   "haproxy_proxies" : {},
   "percona_version" : "5.5",
+  "db_server_id" : "1",
+  "db_origin_ip" : "",
   "db_allow_remote" : "true",
   "db_port" : "3306",
   "db_status_port" : "9200",

@@ -1,11 +1,6 @@
 {
   "server_ip" : "172.10.10.1",
   "profiles" : [ "panopoly_site" ],
-  "haproxy_default_options" : {
-    "tcplog"      : [ ],
-    "dontlognull" : [ ],
-    "redispatch"  : [ ]
-  },
   "haproxy_proxies" : {
     "mysql" : {
       "port" : "3306",
@@ -17,7 +12,7 @@
       "servers" : {
         "db1" : {
           "ip" : "172.10.20.1",
-          "port" : "6612",
+          "port" : "3306",
           "settings" : [
             "check",
             [ "port", "9200"  ],
@@ -28,7 +23,7 @@
         },
         "db2" : {
           "ip" : "172.10.20.2",
-          "port" : "6612",
+          "port" : "3306",
           "settings" : [
             "check",
             [ "port", "9200"  ],
